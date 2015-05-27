@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0070E71A50254A002F4C97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0070E61A50254A002F4C97 /* Foundation.framework */; };
+		6E0071521A502AFE002F4C97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0071511A502AFE002F4C97 /* UIKit.framework */; };
+		6E0071871A502D31002F4C97 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0071861A502D30002F4C97 /* libsqlite3.0.dylib */; };
+		6E0071881A502D39002F4C97 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E00714D1A50272A002F4C97 /* QuartzCore.framework */; };
+		6E0071891A502D4A002F4C97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E00714B1A50271D002F4C97 /* CoreGraphics.framework */; };
+		6E00718A1A502D53002F4C97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0071491A502716002F4C97 /* SystemConfiguration.framework */; };
+		6E00718B1A502D59002F4C97 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0071471A50270B002F4C97 /* MobileCoreServices.framework */; };
+		6E00718C1A502D5F002F4C97 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0071451A502700002F4C97 /* CoreTelephony.framework */; };
+		6E00718D1A502D6B002F4C97 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0071431A5026F9002F4C97 /* MapKit.framework */; };
+		6E00718E1A502D76002F4C97 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0071411A5026F3002F4C97 /* AudioToolbox.framework */; };
+		6E00718F1A502D80002F4C97 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E00713F1A5026EA002F4C97 /* libz.dylib */; };
+		6EA84DCE1AA04EDF008C0905 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA84DC21AA04EDF008C0905 /* CityViewController.m */; };
+		6EA84DCF1AA04EDF008C0905 /* EUExCityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA84DC41AA04EDF008C0905 /* EUExCityListView.m */; };
+		6EA84DD01AA04EDF008C0905 /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA84DC61AA04EDF008C0905 /* FirstView.m */; };
+		6EA84DD11AA04EDF008C0905 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA84DC91AA04EDF008C0905 /* ChineseString.m */; };
+		6EA84DD21AA04EDF008C0905 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EA84DCA1AA04EDF008C0905 /* pinyin.c */; };
+		6EA84DD31AA04EDF008C0905 /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA84DCD1AA04EDF008C0905 /* SearchView.m */; };
+		F783AD561ABBF4C4005431C5 /* libAppCanEngine_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F783AD551ABBF4C4005431C5 /* libAppCanEngine_IOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E0070E11A50254A002F4C97 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6E0070E31A50254A002F4C97 /* uexCityListView.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = uexCityListView.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0070E61A50254A002F4C97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E0070EA1A50254A002F4C97 /* uexCityListView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uexCityListView-Prefix.pch"; sourceTree = "<group>"; };
+		6E00713F1A5026EA002F4C97 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6E0071411A5026F3002F4C97 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6E0071431A5026F9002F4C97 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6E0071451A502700002F4C97 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		6E0071471A50270B002F4C97 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6E0071491A502716002F4C97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6E00714B1A50271D002F4C97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E00714D1A50272A002F4C97 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E0071511A502AFE002F4C97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E0071861A502D30002F4C97 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		6EA84DC11AA04EDF008C0905 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		6EA84DC21AA04EDF008C0905 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		6EA84DC31AA04EDF008C0905 /* EUExCityListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExCityListView.h; sourceTree = "<group>"; };
+		6EA84DC41AA04EDF008C0905 /* EUExCityListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUExCityListView.m; sourceTree = "<group>"; };
+		6EA84DC51AA04EDF008C0905 /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstView.h; sourceTree = "<group>"; };
+		6EA84DC61AA04EDF008C0905 /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstView.m; sourceTree = "<group>"; };
+		6EA84DC81AA04EDF008C0905 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		6EA84DC91AA04EDF008C0905 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		6EA84DCA1AA04EDF008C0905 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		6EA84DCB1AA04EDF008C0905 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		6EA84DCC1AA04EDF008C0905 /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		6EA84DCD1AA04EDF008C0905 /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		6EA84DD41AA04F1E008C0905 /* Beqtucontent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beqtucontent.h; sourceTree = "<group>"; };
+		6EF7B10E1A792BB700ED5E3F /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		6EF7B10F1A792BB700ED5E3F /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		6EF7B1101A792BB700ED5E3F /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		6EF7B1111A792BB700ED5E3F /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		6EF7B1141A792BB700ED5E3F /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		6EF7B1151A792BB700ED5E3F /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		6EF7B1161A792BB700ED5E3F /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		6EF7B1171A792BB700ED5E3F /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		6EF7B1181A792BB700ED5E3F /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		6EF7B1191A792BB700ED5E3F /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		6EF7B11A1A792BB700ED5E3F /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		6EF7B11B1A792BB700ED5E3F /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		6EF7B11C1A792BB700ED5E3F /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		6EF7B11D1A792BB700ED5E3F /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		6EF7B11E1A792BB700ED5E3F /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		6EF7B11F1A792BB700ED5E3F /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		6EF7B1201A792BB700ED5E3F /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		6EF7B1211A792BB700ED5E3F /* WidgetOneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetOneDelegate.h; sourceTree = "<group>"; };
+		F783AD551ABBF4C4005431C5 /* libAppCanEngine_IOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCanEngine_IOS.a; path = ../libAppCanEngine_IOS.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0070E01A50254A002F4C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E00718F1A502D80002F4C97 /* libz.dylib in Frameworks */,
+				6E00718E1A502D76002F4C97 /* AudioToolbox.framework in Frameworks */,
+				6E00718D1A502D6B002F4C97 /* MapKit.framework in Frameworks */,
+				6E00718C1A502D5F002F4C97 /* CoreTelephony.framework in Frameworks */,
+				6E00718B1A502D59002F4C97 /* MobileCoreServices.framework in Frameworks */,
+				6E00718A1A502D53002F4C97 /* SystemConfiguration.framework in Frameworks */,
+				6E0071891A502D4A002F4C97 /* CoreGraphics.framework in Frameworks */,
+				6E0071521A502AFE002F4C97 /* UIKit.framework in Frameworks */,
+				6E0071881A502D39002F4C97 /* QuartzCore.framework in Frameworks */,
+				6E0071871A502D31002F4C97 /* libsqlite3.0.dylib in Frameworks */,
+				F783AD561ABBF4C4005431C5 /* libAppCanEngine_IOS.a in Frameworks */,
+				6E0070E71A50254A002F4C97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E0070DA1A502549002F4C97 = {
+			isa = PBXGroup;
+			children = (
+				6E0070E81A50254A002F4C97 /* EUExCityListView */,
+				6E0070E51A50254A002F4C97 /* Frameworks */,
+				6E0070E41A50254A002F4C97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E0070E41A50254A002F4C97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0070E31A50254A002F4C97 /* uexCityListView.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E0070E51A50254A002F4C97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F783AD551ABBF4C4005431C5 /* libAppCanEngine_IOS.a */,
+				6E0071861A502D30002F4C97 /* libsqlite3.0.dylib */,
+				6E0071511A502AFE002F4C97 /* UIKit.framework */,
+				6E00714D1A50272A002F4C97 /* QuartzCore.framework */,
+				6E00714B1A50271D002F4C97 /* CoreGraphics.framework */,
+				6E0071491A502716002F4C97 /* SystemConfiguration.framework */,
+				6E0071471A50270B002F4C97 /* MobileCoreServices.framework */,
+				6E0071451A502700002F4C97 /* CoreTelephony.framework */,
+				6E0071431A5026F9002F4C97 /* MapKit.framework */,
+				6E0071411A5026F3002F4C97 /* AudioToolbox.framework */,
+				6E00713F1A5026EA002F4C97 /* libz.dylib */,
+				6E0070E61A50254A002F4C97 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0070E81A50254A002F4C97 /* EUExCityListView */ = {
+			isa = PBXGroup;
+			children = (
+				6EA84DC01AA04EDF008C0905 /* EUExCityListView */,
+				6EF7B10D1A792BB700ED5E3F /* engineHeader */,
+				6E0070E91A50254A002F4C97 /* Supporting Files */,
+			);
+			path = EUExCityListView;
+			sourceTree = "<group>";
+		};
+		6E0070E91A50254A002F4C97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E0070EA1A50254A002F4C97 /* uexCityListView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EA84DC01AA04EDF008C0905 /* EUExCityListView */ = {
+			isa = PBXGroup;
+			children = (
+				6EA84DC11AA04EDF008C0905 /* CityViewController.h */,
+				6EA84DC21AA04EDF008C0905 /* CityViewController.m */,
+				6EA84DC31AA04EDF008C0905 /* EUExCityListView.h */,
+				6EA84DC41AA04EDF008C0905 /* EUExCityListView.m */,
+				6EA84DC51AA04EDF008C0905 /* FirstView.h */,
+				6EA84DC61AA04EDF008C0905 /* FirstView.m */,
+				6EA84DC71AA04EDF008C0905 /* pinyin */,
+				6EA84DCC1AA04EDF008C0905 /* SearchView.h */,
+				6EA84DCD1AA04EDF008C0905 /* SearchView.m */,
+			);
+			path = EUExCityListView;
+			sourceTree = "<group>";
+		};
+		6EA84DC71AA04EDF008C0905 /* pinyin */ = {
+			isa = PBXGroup;
+			children = (
+				6EA84DC81AA04EDF008C0905 /* ChineseString.h */,
+				6EA84DC91AA04EDF008C0905 /* ChineseString.m */,
+				6EA84DCA1AA04EDF008C0905 /* pinyin.c */,
+				6EA84DCB1AA04EDF008C0905 /* pinyin.h */,
+			);
+			path = pinyin;
+			sourceTree = "<group>";
+		};
+		6EF7B10D1A792BB700ED5E3F /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				6EA84DD41AA04F1E008C0905 /* Beqtucontent.h */,
+				6EF7B10E1A792BB700ED5E3F /* EUExBase.h */,
+				6EF7B10F1A792BB700ED5E3F /* EUExBaseDefine.h */,
+				6EF7B1101A792BB700ED5E3F /* EUtility.h */,
+				6EF7B1111A792BB700ED5E3F /* JSON.h */,
+				6EF7B1131A792BB700ED5E3F /* SBJson */,
+				6EF7B1211A792BB700ED5E3F /* WidgetOneDelegate.h */,
+			);
+			path = engineHeader;
+			sourceTree = "<group>";
+		};
+		6EF7B1131A792BB700ED5E3F /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				6EF7B1141A792BB700ED5E3F /* NSObject+SBJson.h */,
+				6EF7B1151A792BB700ED5E3F /* SBJson.h */,
+				6EF7B1161A792BB700ED5E3F /* SBJsonParser.h */,
+				6EF7B1171A792BB700ED5E3F /* SBJsonStreamParser.h */,
+				6EF7B1181A792BB700ED5E3F /* SBJsonStreamParserAccumulator.h */,
+				6EF7B1191A792BB700ED5E3F /* SBJsonStreamParserAdapter.h */,
+				6EF7B11A1A792BB700ED5E3F /* SBJsonStreamParserState.h */,
+				6EF7B11B1A792BB700ED5E3F /* SBJsonStreamWriter.h */,
+				6EF7B11C1A792BB700ED5E3F /* SBJsonStreamWriterAccumulator.h */,
+				6EF7B11D1A792BB700ED5E3F /* SBJsonStreamWriterState.h */,
+				6EF7B11E1A792BB700ED5E3F /* SBJsonTokeniser.h */,
+				6EF7B11F1A792BB700ED5E3F /* SBJsonUTF8Stream.h */,
+				6EF7B1201A792BB700ED5E3F /* SBJsonWriter.h */,
+			);
+			path = SBJson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E0070E21A50254A002F4C97 /* uexCityListView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0071061A50254A002F4C97 /* Build configuration list for PBXNativeTarget "uexCityListView" */;
+			buildPhases = (
+				6E0070DF1A50254A002F4C97 /* Sources */,
+				6E0070E01A50254A002F4C97 /* Frameworks */,
+				6E0070E11A50254A002F4C97 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexCityListView;
+			productName = EUExCityListView;
+			productReference = 6E0070E31A50254A002F4C97 /* uexCityListView.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E0070DB1A502549002F4C97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hongbao.cui;
+			};
+			buildConfigurationList = 6E0070DE1A502549002F4C97 /* Build configuration list for PBXProject "uexCityListView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E0070DA1A502549002F4C97;
+			productRefGroup = 6E0070E41A50254A002F4C97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E0070E21A50254A002F4C97 /* uexCityListView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E0070DF1A50254A002F4C97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA84DD31AA04EDF008C0905 /* SearchView.m in Sources */,
+				6EA84DD21AA04EDF008C0905 /* pinyin.c in Sources */,
+				6EA84DD11AA04EDF008C0905 /* ChineseString.m in Sources */,
+				6EA84DCF1AA04EDF008C0905 /* EUExCityListView.m in Sources */,
+				6EA84DCE1AA04EDF008C0905 /* CityViewController.m in Sources */,
+				6EA84DD01AA04EDF008C0905 /* FirstView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6E0071041A50254A002F4C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang GuoChun (GJL3LN9D59)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCityListView";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = uexCityListView;
+				PROVISIONING_PROFILE = "84F8B473-3DDE-49F0-90A1-5EF7094AE3D1";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		6E0071051A50254A002F4C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wang GuoChun (GJL3LN9D59)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCityListView";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = uexCityListView;
+				PROVISIONING_PROFILE = "84F8B473-3DDE-49F0-90A1-5EF7094AE3D1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		6E0071071A50254A002F4C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				DSTROOT = /tmp/EUExCityListView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExCityListView/uexCityListView-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = uexCityListView;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		6E0071081A50254A002F4C97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				DSTROOT = /tmp/EUExCityListView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExCityListView/uexCityListView-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = uexCityListView;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0070DE1A502549002F4C97 /* Build configuration list for PBXProject "uexCityListView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0071041A50254A002F4C97 /* Debug */,
+				6E0071051A50254A002F4C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0071061A50254A002F4C97 /* Build configuration list for PBXNativeTarget "uexCityListView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0071071A50254A002F4C97 /* Debug */,
+				6E0071081A50254A002F4C97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E0070DB1A502549002F4C97 /* Project object */;
+}
